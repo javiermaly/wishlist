@@ -1,0 +1,337 @@
+{
+	"info": {
+		"_postman_id": "9fe06413-143a-4029-9212-4aa05c731fcc",
+		"name": "wishlist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/wishlist/v1/auth/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"javiermaly\",\r\n    \"password\": \"admin1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"javiermaly\",\r\n    \"password\": \"admin1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/books",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDAxMzA5LCJleHAiOjE2NTMxNzg5MTR9.Z0dm2VijksNp5-JwuTY0mkra904l_8ML-diSlxjTfhujjJnSDx5sD5tx3Ut14GsjKO8lHvXU5lWemEICv7FQCw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/books/volumes",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDAxMzA5LCJleHAiOjE2NTMxNzg5MTR9.Z0dm2VijksNp5-JwuTY0mkra904l_8ML-diSlxjTfhujjJnSDx5sD5tx3Ut14GsjKO8lHvXU5lWemEICv7FQCw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/books/volumes?key=AIzaSyDYk3-lNMQynqmE_sz5-Ebn2T5EYa_s4n8&intitle=java&inauthor=&inpublisher=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"books",
+						"volumes"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "AIzaSyDYk3-lNMQynqmE_sz5-Ebn2T5EYa_s4n8"
+						},
+						{
+							"key": "intitle",
+							"value": "java"
+						},
+						{
+							"key": "inauthor",
+							"value": ""
+						},
+						{
+							"key": "inpublisher",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/wishlists",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDAxMzA5LCJleHAiOjE2NTMxNzg5MTR9.Z0dm2VijksNp5-JwuTY0mkra904l_8ML-diSlxjTfhujjJnSDx5sD5tx3Ut14GsjKO8lHvXU5lWemEICv7FQCw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"For my Bday..\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/whishlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"whishlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/wishlists",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDY1MjAxLCJleHAiOjE2NTMyNDI4MDZ9.6Lbmyl4T6lBKSH9iOJ-u3rGxWYCWYHchFoVFQQO78F2kXMqAyHieqZXETRShl_g7-64AMnoQwPTD9-Qkzl81CQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/whishlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"whishlists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/wishlists/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDY1MjAxLCJleHAiOjE2NTMyNDI4MDZ9.6Lbmyl4T6lBKSH9iOJ-u3rGxWYCWYHchFoVFQQO78F2kXMqAyHieqZXETRShl_g7-64AMnoQwPTD9-Qkzl81CQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/whishlists/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"whishlists",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/wishlists/1",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDAxMzA5LCJleHAiOjE2NTMxNzg5MTR9.Z0dm2VijksNp5-JwuTY0mkra904l_8ML-diSlxjTfhujjJnSDx5sD5tx3Ut14GsjKO8lHvXU5lWemEICv7FQCw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/whishlists/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"whishlists",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/whishlists/4/books",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDAxMzA5LCJleHAiOjE2NTMxNzg5MTR9.Z0dm2VijksNp5-JwuTY0mkra904l_8ML-diSlxjTfhujjJnSDx5sD5tx3Ut14GsjKO8lHvXU5lWemEICv7FQCw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " [\n      2,\n      3,\n      4\n   ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/whishlists/4/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"whishlists",
+						"4",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/wishlist/v1/whishlists/4/books",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJqYXZpZXJtYWx5IiwiaWF0IjoxNjUyNDAxMzA5LCJleHAiOjE2NTMxNzg5MTR9.Z0dm2VijksNp5-JwuTY0mkra904l_8ML-diSlxjTfhujjJnSDx5sD5tx3Ut14GsjKO8lHvXU5lWemEICv7FQCw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " [\n      2,\n      3,\n      4\n   ]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8181/wishlist/v1/whishlists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8181",
+					"path": [
+						"wishlist",
+						"v1",
+						"whishlists"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

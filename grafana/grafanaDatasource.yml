@@ -1,0 +1,6 @@
+datasources:
+  - name: Prometheus wishlist
+    access: direct
+    type: prometheus
+    url: http://localhost:9090
+    isDefault: true
